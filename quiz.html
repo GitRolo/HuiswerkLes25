@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<meta charset="utf-8">
+<title>Mijn Quiz</title>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $("#antwoorden button").click(function(e) {
+        e.preventDefault();        
+        if ($(this).hasClass("correct")) {
+          alert("Goed antwoord!");
+        } else {
+          alert("Probeer het nog een keer!");
+        }
+      });
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>
+  <h1>Tennis Quiz</h1>
+   <div id="vraag">
+    <h2>Vraag A:</h2>
+    <p>Welke tennisser heeft de meeste Grand Slams gewonnen in het mannentennis?</p>
+  </div>
+  <div id="antwoorden" class="container">
+    <h3>Kies een antwoord:</h3>
+    <button class="wrong">Rafael Nadal</button>
+    <button class="wrong">Roger Federer</button>
+    <button class="correct">Novak Djokovic</button>
+    <button class="wrong">Andy Murray</button>
+  </div>
+  <br>
+  <div id="vraag">
+    <h2>Vraag B:</h2>
+    <p>Welke tennisster heeft de meeste Grand Slams gewonnen in het vrouwentennis?</p>
+  </div>
+   <div id="antwoorden" class="container">
+    <h3>Kies een antwoord:</h3>
+    <button class="wrong">Serena Williams</button>
+    <button class="correct">Margaret Court</button>
+    <button class="wrong">Steffi Graf</button>
+    <button class="wrong">Chris Evert</button>
+  </div>
+  <footer><hr>©Raúl van den Bedem 2023<hr></footer>
+  </body>
+</html>
