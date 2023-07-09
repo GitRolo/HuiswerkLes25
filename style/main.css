@@ -19,14 +19,6 @@ p{
   text-align: center;
   }
 
-ul{
-    text-align: center;
-}
-
-li{
-    text-align: center;
-}
-
 .container{
     text-align: center;
 }
@@ -53,7 +45,7 @@ button {
   }
   
   button:active {
-    background-color: #004080;
+    background-color: #ff3600;
   }
   
 
